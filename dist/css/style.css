@@ -1,0 +1,691 @@
+/*color variable*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 2;
+  scroll-behavior: smooth;
+}
+
+#container {
+  width: 1340px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  width: 1350px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.sub-container {
+  width: 1150px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+img {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+/* styling header*/
+.primary-header {
+  background-color: rgb(92, 17, 52);
+  position: relative;
+}
+.primary-header .top-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.primary-header .top-header .logo {
+  font-family: "EB Garamond", serif;
+  padding-inline: 16px;
+}
+.primary-header .top-header .logo .logo-brand {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #fffffe;
+}
+.primary-header .top-header .logo .logo-brand:hover {
+  color: #fffffe;
+  transition: 0.3s all;
+}
+.primary-header .top-header .search-bar {
+  position: relative;
+}
+.primary-header .top-header .search-bar input[type=search] {
+  width: 30vw;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.primary-header .top-header .search-bar input[type=search]:focus {
+  background-color: #d9d4e7;
+  transition: 0.5s all;
+}
+.primary-header .top-header .search-bar span {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  vertical-align: middle;
+  color: gray;
+}
+.primary-header .top-header .side-icons span {
+  padding-inline: 1rem;
+  font-size: 2rem;
+  color: #fffffe;
+}
+.primary-header .navigation {
+  background-color: #fffffe;
+  position: relative;
+}
+.primary-header .navigation .nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.primary-header .navigation .nav-list .nav-link {
+  padding: 0.5rem;
+  position: relative;
+}
+.primary-header .navigation .nav-list .nav-link a {
+  line-height: 2;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.primary-header .navigation .nav-list .nav-link .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #fffffe;
+  padding: 0.5rem;
+  top: 100%;
+  left: 0;
+  width: 15vw;
+  border-radius: 0% 10%;
+}
+.primary-header .navigation .nav-list .nav-link .dropdown a {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  line-height: 5vh;
+}
+.primary-header .navigation .nav-list .nav-link .dropdown a:hover {
+  text-decoration: underline;
+  color: rgb(92, 17, 52);
+}
+.primary-header .navigation .nav-list .nav-link:hover > .dropdown {
+  display: block;
+}
+
+.hero-section {
+  height: 85vh;
+  background-image: url("/assets/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-section .content-section {
+  height: 60vh;
+  width: 70vw;
+  margin: auto;
+  background-color: rgba(215, 164, 199, 0.4);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section-inner .shape1 {
+  height: 300px;
+  width: 300px;
+  rotate: 45deg;
+  background-color: rgb(215, 164, 199);
+}
+.content-section-inner .shape1 .shape2 {
+  height: 150px;
+  width: 150px;
+  rotate: 90deg;
+  background-color: rgb(92, 17, 52);
+}
+.content-section-inner .shape1 .content {
+  margin: auto;
+  text-align: center;
+  rotate: -45deg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 40%;
+}
+.content-section-inner .shape1 .content .title {
+  line-height: 1;
+  font-family: "EB Garamond", serif;
+  color: white;
+  font-size: 8rem;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.content-section-inner .shape1 .content .title:hover {
+  color: rgb(92, 17, 52);
+  transition: 0.5s all ease-in;
+}
+.content-section-inner .shape1 .content .sub-title {
+  font-family: "EB Garamond", serif;
+  margin-bottom: 1rem;
+}
+.content-section-inner .shape1 .content a {
+  padding: 1rem;
+  border-top: 2px solid white;
+  font-size: 12px;
+}
+.content-section-inner .shape1 .content a:hover {
+  border-top: 2px solid black;
+  transition: 0.3s all ease-in-out;
+}
+
+.featured-section {
+  background-color: rgb(92, 17, 52);
+  padding: 1rem;
+}
+.featured-section .featured-inner {
+  background-color: white;
+}
+.featured-section .content {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.featured-section .content .heading {
+  font-size: clamp(1rem, 0.5rem + 5vw, 4rem);
+}
+.featured-section .content .display-btn {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  background-color: rgb(92, 17, 52);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.featured-section .content .display-btn:hover {
+  background-color: black;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.display-section {
+  background-color: rgb(92, 17, 52);
+}
+.display-section .display-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.display-section .display-inner .image {
+  padding: 0.8rem;
+  flex: 25%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.display-section .display-inner .image img {
+  max-width: 100%;
+  filter: brightness(70%);
+}
+.display-section .display-inner .image img:hover {
+  filter: none;
+  transform: scale(1.04);
+  transition: 0.1s all ease-in-out;
+}
+.display-section .display-inner .image button {
+  height: 5vw;
+  width: 10vw;
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  font-size: 1rem;
+  z-index: 999;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.1rem;
+}
+.display-section .display-inner .image button:hover {
+  transform: scale(1.04);
+  background-color: #d9d4e7;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+
+.arrival-section {
+  padding: 5rem 0rem 2rem 0rem;
+  background-color: rgb(215, 164, 199);
+}
+.arrival-section .arrival-inner {
+  background-color: white;
+  padding: 0 1rem;
+}
+.arrival-section .arrival-inner .heading {
+  font-size: clamp(1rem, 0.5rem + 5vw, 4rem);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 10px 10px 15px rgb(92, 17, 52);
+}
+.arrival-section .arrival-inner .product {
+  display: flex;
+}
+.arrival-section .arrival-inner .product .heading {
+  font-weight: 100;
+  margin-top: 0.5rem;
+}
+.arrival-section .arrival-inner .product .clothing {
+  flex: 20%;
+  line-height: 1.3;
+  border-left: 1px solid rgb(237, 237, 237);
+  padding: 1rem 0;
+}
+.arrival-section .arrival-inner .product .clothing a {
+  position: relative;
+}
+.arrival-section .arrival-inner .product .clothing a img {
+  max-width: 100%;
+  border: 10px solid white;
+}
+.arrival-section .arrival-inner .product .clothing a img:hover {
+  filter: brightness(50%);
+}
+.arrival-section .arrival-inner .product .clothing a img:hover ~ span {
+  display: flex;
+}
+.arrival-section .arrival-inner .product .clothing a span {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  color: rgb(246, 246, 40);
+  display: none;
+  font-size: 1.5rem;
+}
+.arrival-section .arrival-inner .product .clothing a span p {
+  color: rgb(252, 249, 249);
+}
+.arrival-section .arrival-inner .product .clothing p {
+  color: rgb(84, 83, 83);
+}
+.arrival-section .arrival-inner .product .clothing .price {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+  padding-inline-end: 1rem;
+}
+.arrival-section .arrival-inner .product .clothing .price ins {
+  font-weight: 700;
+  text-decoration: none;
+}
+.arrival-section .arrival-inner .product .clothing .price del {
+  font-weight: 200;
+}
+.arrival-section .arrival-inner .product .clothing .price .offer {
+  font-size: 14px;
+  color: red;
+}
+.arrival-section .browse-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+.arrival-section .browse-btn a {
+  font-size: 20px;
+  font-weight: 600;
+}
+.arrival-section .browse-btn a:hover {
+  color: white;
+}
+.arrival-section .browse-btn a span {
+  vertical-align: middle;
+}
+
+.product-section {
+  background-color: #d9d4e7;
+}
+.product-section .essential-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.product-section .essential-list li a {
+  font-size: 0.875rem;
+  color: rgb(116, 170, 8);
+}
+.product-section .essential-list li:hover {
+  text-decoration: underline;
+}
+.product-section .product-inner {
+  display: flex;
+  padding-top: 2rem;
+}
+.product-section .product-inner .left-section {
+  flex: 25%;
+}
+.product-section .product-inner .left-section .girl-img {
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-section .product-inner .product-content {
+  flex: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-section .product-inner .product-content p {
+  color: rgb(92, 17, 52);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.product-section .product-inner .product-content h1 {
+  font-size: 4rem;
+  font-family: "EB Garamond", serif;
+}
+.product-section .product-inner .product-content h1:hover {
+  color: yellowgreen;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.product-section .product-inner .product-content a {
+  font-size: 16px;
+  padding: 0.5rem 0.3rem;
+  border-bottom: 2px solid rgb(92, 17, 52);
+}
+.product-section .product-inner .product-content a:hover {
+  color: red;
+  background-color: black;
+  border: none;
+  transition: 0.5s all ease-in-out;
+}
+.product-section .product-inner .right-section {
+  flex: 25%;
+}
+.product-section .product-inner .right-section .product-img {
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.service-inner {
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.service-inner span {
+  color: rgb(92, 17, 52);
+  font-size: 2.5rem;
+}
+.service-inner .text {
+  line-height: 1.8rem;
+}
+
+.primary-footer {
+  background-color: rgb(92, 17, 52);
+  color: white;
+}
+.primary-footer .top-footer {
+  display: flex;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+}
+.primary-footer .top-footer .about-section {
+  flex: 25%;
+}
+.primary-footer .top-footer .about-section .content {
+  padding: 1rem;
+}
+.primary-footer .top-footer .about-section .content h1 {
+  line-height: 2.5rem;
+}
+.primary-footer .top-footer .about-section h3 {
+  text-transform: uppercase;
+}
+.primary-footer .top-footer .about-section .list li a {
+  color: white;
+  font-size: 1rem;
+}
+.primary-footer .top-footer .about-section .list li a:hover {
+  text-decoration: underline;
+}
+.primary-footer .top-footer .about-section .email-link input[type=email] {
+  padding: 1rem;
+  border-radius: 50px;
+}
+.primary-footer .top-footer .about-section .email-link input[type=email]:focus {
+  background-color: #d9d4e7;
+  transition: 0.5s all;
+}
+.primary-footer .top-footer .about-section .email-link button {
+  padding: 0.4rem;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+.primary-footer .copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+/*media query for large smarttphones*/
+@media screen and (max-width: 426px) {
+  .primary-header .top-header .logo-mob .logo-brand {
+    font-size: 25px;
+    line-height: 1;
+  }
+  .primary-header .top-header .side-icon-mob span {
+    font-size: 1rem;
+  }
+  .primary-header .navigation .nav-list {
+    flex-wrap: wrap;
+  }
+  .primary-header .navigation .nav-list .nav-link-mob {
+    transition: 0.2s all;
+    padding: 0;
+  }
+  .primary-header .navigation .nav-list .nav-link-mob .link-mob {
+    transition: 0.2s all;
+    font-size: 0.8rem;
+  }
+  .hero-section .content-section .content-section-inner .shape-mob {
+    height: 40vw;
+    width: 40vw;
+    position: relative;
+  }
+  .hero-section .content-section .content-section-inner .shape-mob .shape2-mob {
+    height: 16vw;
+    width: 16vw;
+  }
+  .display-section .display-inner .image-tab img {
+    max-width: 80%;
+  }
+  .arrival-mob .arrival-inner .product-mob {
+    flex-direction: column;
+  }
+  .arrival-mob .arrival-inner .product-mob .clothing-mob figcaption {
+    display: flex;
+    justify-content: space-between;
+  }
+  .arrival-mob .arrival-inner .product-mob .clothing-mob figcaption .mob {
+    transition: 0.2s all;
+    font-size: 1.125rem;
+  }
+  .arrival-mob .arrival-inner .product-mob .clothing-mob figcaption .mob2 {
+    transition: 0.2s all;
+    font-size: 1rem;
+  }
+  .product-section {
+    line-height: 3;
+    transition: 0.2s all;
+    padding-bottom: 1rem;
+  }
+  .product-section .essential-list {
+    gap: 1rem;
+  }
+  .product-section .product-inner .left-section img,
+  .product-section .product-inner .right-section img {
+    display: none;
+    transition: 0.2s all;
+  }
+  .product-section .product-inner .pro-mob .descrpt-mob .p-mob {
+    transition: 0.2s all;
+  }
+  .product-section .product-inner .pro-mob .descrpt-mob a {
+    transition: 0.2s all;
+    padding: 0.1rem;
+  }
+}
+/*hero section tab view*/
+@media screen and (max-width: 768px) {
+  .hero-tab {
+    height: 70vh;
+    transition: 0.2s all;
+  }
+  .hero-tab .content-tab {
+    height: 50vh;
+  }
+  .hero-tab .content-tab .shape-tab {
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+  }
+  .hero-tab .content-tab .shape-tab .shape2-tab {
+    height: 16vw;
+    width: 16vw;
+  }
+  .hero-tab .content-tab .shape-tab .sub-content-tab {
+    height: 7vw;
+    width: 25vw;
+    position: absolute;
+    transform: translate(-25%, -90%);
+    top: 40%;
+    left: 40%;
+  }
+  .hero-tab .content-tab .shape-tab .sub-content-tab .title-tab {
+    transition: 0.2s all;
+    font-size: clamp(4.5rem, 0.5rem + 10vw, 4rem);
+    margin-bottom: 1rem;
+  }
+  .hero-tab .content-tab .shape-tab .sub-content-tab .sub-title-tab {
+    transition: 0.2s all;
+    font-size: 0.6rem;
+    line-height: 1.5;
+  }
+  .hero-tab .content-tab .shape-tab .sub-content-tab .link-tab {
+    transition: 0.2s all;
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    margin-top: 0.2rem;
+  }
+  /*display section tab-view*/
+  .display-section .display-inner .image .btn-tab {
+    font-size: 0.5rem;
+    font-weight: 700;
+    transition: 0.2s all;
+  }
+  /*arrival section tab view*/
+  .arrival-section {
+    transition: 0.2s all;
+  }
+  .arrival-section .arrival-inner .product .clothing-tab-view figcaption h3 {
+    transition: 0.2s all;
+    font-size: 0.9375rem;
+  }
+  .arrival-section .arrival-inner .product .clothing-tab-view figcaption p {
+    transition: 0.2s all;
+    font-size: 0.625rem;
+  }
+  .arrival-section .arrival-inner .product .clothing-tab-view figcaption .price-tab-view {
+    transition: 0.2s all;
+    flex-direction: column;
+    font-size: 0.8125rem;
+  }
+  /*product section tab view*/
+  .product-section {
+    transition: 0.2s all;
+  }
+  .product-section .essential-list li a {
+    font-size: 0.75rem;
+  }
+  .product-section .product-inner .product-content .product-description .p-tab {
+    transition: 0.2s all;
+    font-size: 0.5rem;
+  }
+  .product-section .product-inner .product-content .product-description .sub-title-tab {
+    transition: 0.2s all;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  /*service-section tab view*/
+  .service-section .service-tab {
+    transition: 0.2s all;
+    flex-direction: column;
+  }
+  .service-section .service-tab a {
+    transition: 0.2s all;
+    line-height: 0.5;
+  }
+  .service-section .service-tab a span {
+    font-size: 1.8rem;
+    transition: 0.2s all;
+  }
+  .service-section .service-tab .text-tab {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    transition: 0.2s all;
+  }
+  /*top-footer tab view*/
+  .primary-footer .top-footer-tab .about-section .content p {
+    font-size: 0.75rem;
+    transition: 0.2s all;
+  }
+  .primary-footer .copyright {
+    font-size: 0.875rem;
+    transition: 0.2s all;
+  }
+}/*# sourceMappingURL=style.css.map */

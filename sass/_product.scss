@@ -1,0 +1,90 @@
+.product-section{
+    background-color:$secondary-text;
+    // padding-bottom: 30rem;
+     .essential-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap:3rem;
+       
+        li{
+            a{
+                font-size: 0.875rem;
+                color: rgb(116, 170, 8);
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+     }
+  
+    
+
+    .product-inner{
+        display: flex;
+        padding-top: 2rem;
+        .left-section{
+            flex:25%;   
+           
+            .girl-img{
+                aspect-ratio: 1/1;
+                //  height: 100%;
+                object-fit: contain;
+               
+            }
+        }
+        .product-content{
+            flex: 50%;
+           
+            text-align: center;
+            display: flex;
+             flex-direction: column;
+            //  justify-content: center;
+            align-items: center;
+
+
+            p{
+                color:$background;
+                text-transform: uppercase;
+                font-size:1rem;
+                
+            }
+            h1{
+                font-size:4rem;
+                font-family: "EB Garamond", serif;
+               
+                &:hover{
+                    color:yellowgreen;
+                    backdrop-filter: blur(40px);
+                }
+               
+            }
+            a{
+                font-size: 16px;
+                padding:0.5rem 0.3rem;
+                border-bottom:2px solid $background;
+                &:hover{
+                    color:red;
+                    background-color: black;
+                    border: none;
+                    transition: .5s all ease-in-out;
+                }
+            }
+        }
+        .right-section{
+            flex:25%;
+          
+          
+            .product-img{
+              
+                aspect-ratio: 1/1;
+                // height: 100%;
+                object-fit: contain;
+                 
+                
+            }
+        }
+    }
+   
+}

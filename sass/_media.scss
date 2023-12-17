@@ -1,0 +1,344 @@
+/*media query for large smarttphones*/
+@media screen and (max-width:426px) {
+    .primary-header {
+        .top-header {
+
+            // background-color: black;
+            .logo-mob {
+                // background-color: aqua;
+
+                .logo-brand {
+                    font-size: 25px;
+                    line-height: 1;
+                }
+            }
+
+            .side-icon-mob {
+                span {
+                    // background-color: aquamarine;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .navigation {
+
+            // background-color: aquamarine;
+            .nav-list {
+                flex-wrap: wrap;
+
+                // background-color: aqua;
+                .nav-link-mob {
+                    transition: 0.2s all;
+                    // background-color: bisque;
+                    padding: 0;
+
+                    .link-mob {
+                        transition: 0.2s all;
+                        // background-color: aqua;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .hero-section {
+        .content-section {
+            .content-section-inner {
+                .shape-mob {
+                    height: 40vw;
+                    width: 40vw;
+                    position: relative;
+
+                    .shape2-mob {
+                        height: 16vw;
+                        width: 16vw;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .display-section {
+
+        .display-inner {
+            .image-tab {
+
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+
+    .arrival-mob {
+        .arrival-inner {
+            .product-mob {
+                flex-direction: column;
+
+                .clothing-mob {
+                    figcaption {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .mob {
+                            transition: 0.2s all;
+                            font-size: 1.125rem;
+                            // background-color: antiquewhite;
+                        }
+
+                        .mob2 {
+                            transition: 0.2s all;
+                            font-size: 1rem;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .product-section {
+        line-height: 3;
+        transition: 0.2s all;
+        padding-bottom: 1rem;
+
+        .essential-list {
+            gap: 1rem;
+        }
+
+        .product-inner {
+
+            .left-section,
+            .right-section {
+                img {
+                    display: none;
+                    transition: 0.2s all;
+                }
+            }
+
+            .pro-mob {
+                .descrpt-mob {
+                    .p-mob {
+
+                        transition: 0.2s all;
+
+
+
+                    }
+
+
+                    a {
+                        transition: 0.2s all;
+                        padding: .1rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hero section tab view*/
+
+@media screen and (max-width:768px) {
+    .hero-tab {
+        height: 70vh;
+        transition: 0.2s all;
+
+        .content-tab {
+
+
+            height: 50vh;
+
+
+            .shape-tab {
+                height: 30vw;
+                width: 30vw;
+                position: relative;
+
+                .shape2-tab {
+                    height: 16vw;
+                    width: 16vw;
+
+                }
+
+                .sub-content-tab {
+                    height: 7vw;
+                    width: 25vw;
+                    position: absolute;
+                    transform: translate(-25%, -90%);
+                    top: 40%;
+                    left: 40%;
+
+                    .title-tab {
+                        transition: 0.2s all;
+                        font-size: clamp(4.5rem, 0.5rem + 10vw, 4rem);
+                        margin-bottom: 1rem;
+                    }
+
+                    .sub-title-tab {
+                        transition: 0.2s all;
+                        // display: none;
+                        font-size: .6rem;
+                        line-height: 1.5;
+                    }
+
+                    .link-tab {
+                        transition: 0.2s all;
+                        font-size: .5rem;
+                        padding: .3rem;
+                        margin-top: .2rem;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    /*display section tab-view*/
+    .display-section {
+        .display-inner {
+            .image {
+                .btn-tab {
+                    // background-color: aqua;
+                    font-size: .5rem;
+                    font-weight: 700;
+                    transition: 0.2s all;
+                }
+            }
+        }
+    }
+
+    /*arrival section tab view*/
+    .arrival-section {
+        transition: 0.2s all;
+
+        .arrival-inner {
+            .product {
+                .clothing-tab-view {
+                    figcaption {
+                        h3 {
+                            transition: 0.2s all;
+                            font-size: 0.9375rem;
+                        }
+
+                        p {
+                            transition: 0.2s all;
+                            font-size: 0.625rem;
+                        }
+
+                        .price-tab-view {
+                            transition: 0.2s all;
+                            flex-direction: column;
+                            font-size: 0.8125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*product section tab view*/
+    .product-section {
+        transition: 0.2s all;
+
+        // background-color: black;
+        .essential-list {
+            li {
+                a {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .product-inner {
+            .product-content {
+                .product-description {
+                    .p-tab {
+                        transition: 0.2s all;
+                        font-size: .5rem;
+                    }
+
+                    .sub-title-tab {
+                        transition: 0.2s all;
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+
+    /*service-section tab view*/
+    .service-section {
+
+        .service-tab {
+            transition: 0.2s all;
+            flex-direction: column;
+
+            a {
+                transition: 0.2s all;
+                line-height: .5;
+
+                span {
+                    font-size: 1.8rem;
+                    transition: 0.2s all;
+                }
+            }
+
+            .text-tab {
+                font-size: .8rem;
+                line-height: 1.5;
+                transition: 0.2s all;
+            }
+
+
+        }
+    }
+
+    /*top-footer tab view*/
+    .primary-footer {
+
+        .top-footer-tab {
+
+            // background-color: black;
+            .about-section {
+                .content {
+                    p {
+                        font-size: 0.75rem;
+                        transition: 0.2s all;
+                    }
+                }
+
+            }
+        }
+
+        .copyright {
+            font-size: 0.875rem;
+            transition: 0.2s all;
+        }
+    }
+
+}

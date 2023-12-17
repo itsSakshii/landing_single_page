@@ -1,0 +1,15 @@
+.service-inner{
+   
+    justify-content:space-evenly;
+    padding: 1rem;
+
+   
+        span{
+            color:$background;
+            font-size: 2.5rem;
+        }
+        .text{
+            line-height:1.8rem;
+        }
+       
+    }

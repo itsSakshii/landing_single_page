@@ -1,0 +1,102 @@
+.hero-section {
+    height: 85vh;
+    background-image: url("/assets/background2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+     position: relative; 
+
+    .content-section {
+         height: 60vh;
+         width: 70vw;
+        margin: auto;
+        background-color: rgba(215, 164, 199, 0.4);
+         position:absolute;
+         transform: translate(-50%,-50%);
+         top:50%;
+         left:50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+    }
+
+}
+
+.content-section-inner {
+    //  position: relative;
+    // background-color: red;
+
+    .shape1 {
+       height:300px;
+       width: 300px;
+        rotate: 45deg;
+       background-color:$main-color;
+        //    position:absolute;
+        //   transform: translate(-50%,-50%);
+        //    top:50%;
+        //    left:50%;
+      
+
+       .shape2 {
+           height: 150px;
+            width: 150px;
+            rotate: 90deg;
+            background-color: $background;
+       }
+       .content {
+           margin: auto;
+           text-align: center;
+           rotate:-45deg;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        //    background-color: aqua;
+          
+           position: relative;
+           bottom:40%;
+           .title {
+
+               line-height: 1;
+               font-family: $logo-font;
+               color: white;
+              
+               font-size: 8rem;
+               backdrop-filter: blur(40px);
+
+               &:hover {
+                   color: $background;
+                   transition: .5s all ease-in;
+               }
+              
+
+           }
+
+           .sub-title {
+               font-family: $logo-font;
+               margin-bottom: 1rem;
+
+           }
+
+           a {
+               padding: 1rem;
+               border-top: 2px solid white;
+               font-size: 12px;
+
+
+               &:hover {
+                   border-top: 2px solid black;
+                   transition: .3s all ease-in-out;
+               }
+
+           }
+       }
+     
+
+   }
+ }
+
+
+
+

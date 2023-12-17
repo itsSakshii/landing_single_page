@@ -1,0 +1,47 @@
+.display-section{
+    background-color:$background;
+    .display-inner{
+      
+       display: flex;
+       flex-wrap: wrap;
+       .image{
+        padding:0.8rem;
+        flex:25%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        img{
+            max-width: 100%;
+            filter: brightness(70%);
+            &:hover{
+                filter: none;
+                transform: scale(1.04);
+                transition: .1s all ease-in-out;
+            }
+        }
+        button{
+            height:5vw;
+            width: 10vw;
+            position: absolute;
+            top:50%;
+            right:40%;
+            font-size: 1rem;
+            z-index: 999;
+            cursor:pointer;
+            border: none;
+            border-radius: 0.1rem;
+            &:hover{
+                transform: scale(1.04);
+                background-color: $secondary-text;
+                font-weight: bold;
+                transition: .3s all ease-in-out;
+            
+            }
+      
+
+        }
+      
+        }
+       
+    }
+}
