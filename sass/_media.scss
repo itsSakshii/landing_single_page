@@ -29,12 +29,12 @@
 
                 // background-color: aqua;
                 .nav-link-mob {
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                     // background-color: bisque;
                     padding: 0;
 
                     .link-mob {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         // background-color: aqua;
                         font-size: .8rem;
                     }
@@ -86,13 +86,13 @@
                         justify-content: space-between;
 
                         .mob {
-                            transition: 0.2s all;
+                            transition: 0.3s all;
                             font-size: 1.125rem;
                             // background-color: antiquewhite;
                         }
 
                         .mob2 {
-                            transition: 0.2s all;
+                            transition: 0.3s all;
                             font-size: 1rem;
                         }
 
@@ -105,7 +105,7 @@
 
     .product-section {
         line-height: 3;
-        transition: 0.2s all;
+        transition: 0.3s all;
         padding-bottom: 1rem;
 
         .essential-list {
@@ -118,7 +118,7 @@
             .right-section {
                 img {
                     display: none;
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                 }
             }
 
@@ -126,7 +126,7 @@
                 .descrpt-mob {
                     .p-mob {
 
-                        transition: 0.2s all;
+                        transition: 0.3s all;
 
 
 
@@ -134,7 +134,7 @@
 
 
                     a {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         padding: .1rem;
                     }
                 }
@@ -163,7 +163,7 @@
 @media screen and (max-width:768px) {
     .hero-tab {
         height: 70vh;
-        transition: 0.2s all;
+        transition: 0.3s all;
 
         .content-tab {
 
@@ -191,20 +191,20 @@
                     left: 40%;
 
                     .title-tab {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         font-size: clamp(4.5rem, 0.5rem + 10vw, 4rem);
                         margin-bottom: 1rem;
                     }
 
                     .sub-title-tab {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         // display: none;
                         font-size: .6rem;
                         line-height: 1.5;
                     }
 
                     .link-tab {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         font-size: .5rem;
                         padding: .3rem;
                         margin-top: .2rem;
@@ -224,7 +224,7 @@
                     // background-color: aqua;
                     font-size: .5rem;
                     font-weight: 700;
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                 }
             }
         }
@@ -232,24 +232,24 @@
 
     /*arrival section tab view*/
     .arrival-section {
-        transition: 0.2s all;
+        transition: 0.3s all;
 
         .arrival-inner {
             .product {
                 .clothing-tab-view {
                     figcaption {
                         h3 {
-                            transition: 0.2s all;
+                            transition: 0.3s all;
                             font-size: 0.9375rem;
                         }
 
                         p {
-                            transition: 0.2s all;
+                            transition: 0.3s all;
                             font-size: 0.625rem;
                         }
 
                         .price-tab-view {
-                            transition: 0.2s all;
+                            transition: 0.3s all;
                             flex-direction: column;
                             font-size: 0.8125rem;
                         }
@@ -261,7 +261,7 @@
 
     /*product section tab view*/
     .product-section {
-        transition: 0.2s all;
+        transition: 0.3s all;
 
         // background-color: black;
         .essential-list {
@@ -276,12 +276,12 @@
             .product-content {
                 .product-description {
                     .p-tab {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         font-size: .5rem;
                     }
 
                     .sub-title-tab {
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                         font-size: 2.5rem;
                         font-weight: 600;
                         line-height: 1.2;
@@ -295,23 +295,23 @@
     .service-section {
 
         .service-tab {
-            transition: 0.2s all;
+            transition: 0.3s all;
             flex-direction: column;
 
             a {
-                transition: 0.2s all;
+                transition: 0.3s all;
                 line-height: .5;
 
                 span {
                     font-size: 1.8rem;
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                 }
             }
 
             .text-tab {
                 font-size: .8rem;
                 line-height: 1.5;
-                transition: 0.2s all;
+                transition: 0.3s all;
             }
 
 
@@ -328,7 +328,7 @@
                 .content {
                     p {
                         font-size: 0.75rem;
-                        transition: 0.2s all;
+                        transition: 0.3s all;
                     }
                 }
 
@@ -337,7 +337,7 @@
 
         .copyright {
             font-size: 0.875rem;
-            transition: 0.2s all;
+            transition: 0.3s all;
         }
     }
 

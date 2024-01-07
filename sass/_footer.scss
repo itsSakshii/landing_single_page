@@ -5,14 +5,9 @@
     .top-footer {
         display: flex;
         padding: 5rem 0;
-
         flex-wrap: wrap;
-
-        // background-color: aquamarine;
         .about-section {
             flex: 25%;
-
-            // background-color: aqua ;
             .content {
                 padding: 1rem;
 
@@ -20,10 +15,6 @@
 
                     line-height: 2.5rem;
                 }
-
-
-
-
             }
 
             h3 {
@@ -63,10 +54,6 @@
                     border-radius: 50px;
                     background-color: black;
                     color: white;
-                    //    position: absolute;
-                    //    top: 0.3rem;
-                    //    right: 6rem;
-                    //    vertical-align: middle
                 }
             }
 

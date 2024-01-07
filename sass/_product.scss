@@ -1,6 +1,5 @@
 .product-section{
     background-color:$secondary-text;
-    // padding-bottom: 30rem;
      .essential-list{
         display: flex;
         flex-wrap: wrap;
@@ -29,7 +28,6 @@
            
             .girl-img{
                 aspect-ratio: 1/1;
-                //  height: 100%;
                 object-fit: contain;
                
             }
@@ -40,7 +38,6 @@
             text-align: center;
             display: flex;
              flex-direction: column;
-            //  justify-content: center;
             align-items: center;
 
 
@@ -79,7 +76,6 @@
             .product-img{
               
                 aspect-ratio: 1/1;
-                // height: 100%;
                 object-fit: contain;
                  
                 

@@ -524,11 +524,11 @@ img {
     flex-wrap: wrap;
   }
   .primary-header .navigation .nav-list .nav-link-mob {
-    transition: 0.2s all;
+    transition: 0.3s all;
     padding: 0;
   }
   .primary-header .navigation .nav-list .nav-link-mob .link-mob {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.8rem;
   }
   .hero-section .content-section .content-section-inner .shape-mob {
@@ -551,16 +551,16 @@ img {
     justify-content: space-between;
   }
   .arrival-mob .arrival-inner .product-mob .clothing-mob figcaption .mob {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 1.125rem;
   }
   .arrival-mob .arrival-inner .product-mob .clothing-mob figcaption .mob2 {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 1rem;
   }
   .product-section {
     line-height: 3;
-    transition: 0.2s all;
+    transition: 0.3s all;
     padding-bottom: 1rem;
   }
   .product-section .essential-list {
@@ -569,13 +569,13 @@ img {
   .product-section .product-inner .left-section img,
   .product-section .product-inner .right-section img {
     display: none;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .product-section .product-inner .pro-mob .descrpt-mob .p-mob {
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .product-section .product-inner .pro-mob .descrpt-mob a {
-    transition: 0.2s all;
+    transition: 0.3s all;
     padding: 0.1rem;
   }
 }
@@ -583,7 +583,7 @@ img {
 @media screen and (max-width: 768px) {
   .hero-tab {
     height: 70vh;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .hero-tab .content-tab {
     height: 50vh;
@@ -606,17 +606,17 @@ img {
     left: 40%;
   }
   .hero-tab .content-tab .shape-tab .sub-content-tab .title-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: clamp(4.5rem, 0.5rem + 10vw, 4rem);
     margin-bottom: 1rem;
   }
   .hero-tab .content-tab .shape-tab .sub-content-tab .sub-title-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.6rem;
     line-height: 1.5;
   }
   .hero-tab .content-tab .shape-tab .sub-content-tab .link-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.5rem;
     padding: 0.3rem;
     margin-top: 0.2rem;
@@ -625,67 +625,67 @@ img {
   .display-section .display-inner .image .btn-tab {
     font-size: 0.5rem;
     font-weight: 700;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   /*arrival section tab view*/
   .arrival-section {
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .arrival-section .arrival-inner .product .clothing-tab-view figcaption h3 {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.9375rem;
   }
   .arrival-section .arrival-inner .product .clothing-tab-view figcaption p {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.625rem;
   }
   .arrival-section .arrival-inner .product .clothing-tab-view figcaption .price-tab-view {
-    transition: 0.2s all;
+    transition: 0.3s all;
     flex-direction: column;
     font-size: 0.8125rem;
   }
   /*product section tab view*/
   .product-section {
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .product-section .essential-list li a {
     font-size: 0.75rem;
   }
   .product-section .product-inner .product-content .product-description .p-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 0.5rem;
   }
   .product-section .product-inner .product-content .product-description .sub-title-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.2;
   }
   /*service-section tab view*/
   .service-section .service-tab {
-    transition: 0.2s all;
+    transition: 0.3s all;
     flex-direction: column;
   }
   .service-section .service-tab a {
-    transition: 0.2s all;
+    transition: 0.3s all;
     line-height: 0.5;
   }
   .service-section .service-tab a span {
     font-size: 1.8rem;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .service-section .service-tab .text-tab {
     font-size: 0.8rem;
     line-height: 1.5;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   /*top-footer tab view*/
   .primary-footer .top-footer-tab .about-section .content p {
     font-size: 0.75rem;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   .primary-footer .copyright {
     font-size: 0.875rem;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
 }/*# sourceMappingURL=style.css.map */
