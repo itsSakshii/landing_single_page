@@ -297,7 +297,7 @@ img {
 }
 
 .arrival-section {
-  padding: 5rem 0rem 2rem 0rem;
+  padding: 5rem 0rem 2rem;
   background-color: rgb(215, 164, 199);
 }
 .arrival-section .arrival-inner {
@@ -515,7 +515,7 @@ img {
 @media screen and (max-width: 426px) {
   .primary-header .top-header .logo-mob .logo-brand {
     font-size: 25px;
-    line-height: 1;
+    line-height: 2;
   }
   .primary-header .top-header .side-icon-mob span {
     font-size: 1rem;

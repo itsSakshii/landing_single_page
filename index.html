@@ -4,20 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-eqiv="pragma" content ="no-cache">
+   <title>echain</title>
+   <meta name="author" content="Sakshi Singh">
    <meta name="description" content="ecommerce store">
    <meta name="keyword" content="ecommerce shop website">
-   <meta http-eqiv="pragma" content ="no-cache">
-   <meta name="author" content="Sakshi Singh">
-   <link rel="preload" href="/dist/css/style.css" as="style">
-   <link rel="stylesheet" href="/dist/css/style.css">
+   <!--- preconnect--->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
- 
    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-   <title>echain</title>
+   <!--- Preload--->
+   <link rel="preload" href="/dist/css/style.css" as="style">
+   <link rel="stylesheet" href="/dist/css/style.css">
+   
 </head>
 
 <body>
@@ -28,7 +30,7 @@
             <a href="#" class=" logo-brand">eChain.</a>
          </div>
 
-         <form action="search.html " method="post" class="search-bar">
+         <form action="search.html" method="post" class="search-bar">
             <input type="search" name="search" placeholder="search">
             <a href=""><span class="material-symbols-outlined">
                   search
@@ -44,16 +46,16 @@
       </div>
 
       <!--navbar starts-->
-      <nav class="navigation">
+      <nav class="navigation" role="navigation">
          <ul class="nav-list container">
             <li class="nav-link nav-link-mob"><a href="#" class="link-mob">Clothing <span class="material-symbols-outlined icon">
                      arrow_drop_down
                   </span></a>
-               <ul class="dropdown">
-                  <li><a href="#">Formals</a></li>
-                  <li><a href="#">Casuals</a></li>
-                  <li><a href="#">Westernwear</a></li>
-                  <li><a href="#">Ethnicwear</a></li>
+               <ul class="dropdown" aria-expanded="true" role="listbox">
+                  <li role="listitem"><a href="#">Formals</a></li>
+                  <li role="listitem"><a href="#">Casuals</a></li>
+                  <li role="listitem"><a href="#">Westernwear</a></li>
+                  <li role="listitem"><a href="#">Ethnicwear</a></li>
                </ul>
             </li>
             <li class="nav-link nav-link-mob"><a href="#" class="link-mob">Beauty essentials <span class="material-symbols-outlined icon">
@@ -94,12 +96,12 @@
             <div class="content-section-inner">
                <div class="shape1 shape-tab shape-mob"> 
                   <div class="shape2 shape2-tab shape2-mob"></div>
-                  <div class="content sub-content-tab">
+                  <section class="content sub-content-tab">
                      <h1 class="title title-tab">CLASSY</h1>
-                     <h3 class="sub-title sub-title-tab">GIRLS COLLECTION</h2>
+                     <h2 class="sub-title sub-title-tab">GIRLS COLLECTION</h2>
                         <a href="#" class="link-tab">eChain.com</a>
 
-                  </div>
+                  </section>
                </div>
             </div>
 
@@ -110,12 +112,12 @@
       <!--featured-section starts-->
       <section class="featured-section">
          <div class=" featured-inner sub-container">
-            <div class="content">
+            <article class="content">
                <h1 class="heading">FEATURING</h1>
                <p>This site deals with classiness highly serving for girls. Transform your wardrobe and treat
                   yourself to something new with fashionable clothings and wide range of mesmerizing accessories</p>
                <a href="#"><button class="display-btn">ABOUT US</button></a>
-            </div>
+            </article>
             <!-- </section> -->
          </div>
       </section>
@@ -124,18 +126,18 @@
       <!--display-section starts-->
       <section class="display-section">
          <div class="display-inner container display-tab">
-            <div class="image image-tab">
+            <picture class="image image-tab">
                <img loading="lazy" src="/assets/winterjacket.png" alt="displaying jacket image">
                <a href="#"><button class="btn-tab">EXPLORE</button></a>
-            </div>
-            <div class="image image-tab">
+            </picture>
+            <picture class="image image-tab">
                <img loading="lazy" src="/assets/clothing.png" alt="displaying cloth image">
                <a href="#"><button class="btn-tab">EXPLORE</button></a>
-            </div>
-            <div class="image image-tab">
+            </picture>
+            <picture class="image image-tab">
                <img loading="lazy" src="/assets/accessories.png" alt="displaying accessories image">
                <a href="#"><button class="btn-tab">EXPLORE</button></a>
-            </div>
+            </picture>
          </div>
       </section>
       <!--display-section ends-->
@@ -368,6 +370,8 @@
                <input type="email" name="email" placeholder="Email">
                <a href=""><button>Subscribe</button></a>
             </form>
+      </div>
+
       </div>
       <section class="copyright">
          <p>Copyright © 2023 All rights reserved by eChain.</p>
